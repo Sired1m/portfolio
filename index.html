@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sayed Qassim Mohammed | Data Scientist and Software Engineer</title>
+<meta name="description" content="Sayed Qassim Mohammed is a data scientist and software engineer in Bahrain, building machine learning projects, AI-powered automation workflows and Flutter and Firebase apps.">
+<meta property="og:title" content="Sayed Qassim Mohammed | Data Scientist and Software Engineer">
+<meta property="og:description" content="Databases, machine learning in Python, AI automation with n8n and OpenAI, and mobile apps with Flutter and Firebase. Based in Bahrain.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E2A30">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --pearl:#F5F6F3; --mist:#DCE5E3; --ink:#0E2A30; --muted:#465C60; --teal:#1F6F78; --flag:#9B1C31;
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;
+  --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--pearl);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-underline-offset:3px;transition:color .15s,background-color .15s}
+a:hover{color:var(--flag)}
+:focus-visible{outline:3px solid var(--flag);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(245,246,243,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--mist)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:60px}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.15rem;color:var(--ink);text-decoration:none;white-space:nowrap}
+.brand:hover{color:var(--ink)}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+nav ul::-webkit-scrollbar{display:none}
+nav a{display:block;padding:8px 12px;color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;border-radius:4px;white-space:nowrap}
+nav a:hover{background:var(--mist);color:var(--ink)}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.query{background:var(--ink);color:#EAF1F0;font-family:var(--mono);font-size:.9rem;line-height:1.7;padding:22px 26px;border-radius:4px;max-width:640px;overflow-x:auto}
+.query .l{display:block;white-space:pre}
+.k{color:#8FD3D9}.s{color:#F4BAC3}.c{color:#9DB4B7}
+.result{margin-top:28px;border-top:3px solid var(--ink)}
+.result .row{padding:26px 0 8px}
+.result .col{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:0 0 4px}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.6rem,8.5vw,5.8rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 30px}
+.meta{display:grid;grid-template-columns:1fr;gap:18px;margin:0 0 34px}
+.meta p{margin:0;font-size:1.25rem;font-family:var(--serif);line-height:1.4}
+.btn{display:inline-block;background:var(--ink);color:var(--pearl);padding:14px 26px;border-radius:3px;font-weight:600;text-decoration:none;transition:background-color .15s}
+.btn:hover{background:var(--flag);color:#fff}
+html.js .query .l{opacity:0;animation:in .3s forwards;animation-delay:calc(var(--i)*.3s)}
+html.js .result{opacity:0;animation:in .5s forwards;animation-delay:1.9s}
+@keyframes in{to{opacity:1}}
+
+/* sections */
+section{padding:64px 0;border-top:1px solid var(--mist)}
+.sec{display:grid;grid-template-columns:1fr;gap:20px}
+h2{font-family:var(--serif);font-weight:500;font-size:1.9rem;line-height:1.15;margin:0;letter-spacing:-.01em}
+h3{font-family:var(--serif);font-weight:600;font-size:1.35rem;line-height:1.25;margin:0 0 4px}
+.body p{margin:0 0 1em;max-width:62ch}
+.dates{color:var(--muted);font-size:.95rem;margin:0 0 10px}
+
+.role{padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid var(--mist)}
+.role:last-child{border:0;margin:0;padding:0}
+.role ul{margin:10px 0 0;padding-left:1.1em;max-width:62ch}
+.role li{margin-bottom:6px}
+
+/* projects */
+.feat{padding:0 0 34px;margin-bottom:34px;border-bottom:1px solid var(--mist)}
+.feat h3{font-size:1.6rem}
+.ctx{color:var(--flag);font-weight:600;font-size:.95rem;margin:0 0 6px}
+.tools{color:var(--muted);font-size:.97rem;margin:0}
+.tools b{color:var(--ink);font-weight:600}
+.more{display:grid;grid-template-columns:1fr;gap:0}
+.more article{padding:22px 0;border-bottom:1px solid var(--mist)}
+.more article:last-child{border:0}
+.more p{margin:0 0 10px;max-width:62ch}
+.more h3{font-size:1.2rem}
+
+/* skills */
+dl{margin:0}
+dl div{display:grid;grid-template-columns:1fr;gap:2px;padding:14px 0;border-bottom:1px solid var(--mist)}
+dl div:first-child{padding-top:0}
+dt{font-weight:600}
+dd{margin:0;color:var(--muted)}
+
+/* contact */
+.contact a.big{font-family:var(--serif);font-size:clamp(1.5rem,5vw,2.4rem);color:var(--ink);text-decoration-color:var(--flag);text-decoration-thickness:2px;word-break:break-all}
+.contact a.big:hover{color:var(--flag)}
+.contact ul{list-style:none;margin:26px 0 0;padding:0}
+.contact li{margin-bottom:6px}
+footer{border-top:1px solid var(--mist);padding:28px 0 40px;color:var(--muted);font-size:.95rem}
+
+@media(min-width:768px){
+  .wrap{padding:0 40px}
+  .meta{grid-template-columns:1fr 1fr;gap:40px}
+  .sec{grid-template-columns:200px 1fr;gap:40px}
+  dl div{grid-template-columns:230px 1fr;gap:20px}
+  .more{grid-template-columns:1fr 1fr;column-gap:48px}
+  .more article:nth-last-child(2){border-bottom:0}
+  .more article:nth-last-child(2):nth-child(even){border-bottom:1px solid var(--mist)}
+}
+@media(min-width:1100px){.hero{padding:88px 0 100px}}
+@media(max-width:560px){
+  header .wrap{height:auto;flex-direction:column;align-items:flex-start;gap:0;padding-top:10px;padding-bottom:6px}
+  nav{width:100%}
+  html{scroll-padding-top:100px}
+  .query{font-size:.78rem;padding:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  html.js .query .l,html.js .result{opacity:1;animation:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Sayed Qassim Mohammed</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <section class="hero" style="border:0;padding-bottom:72px" aria-labelledby="name">
+      <div class="query" role="img" aria-label="A SQL query that returns Sayed Qassim Mohammed, Data Scientist and Software Engineer, Bahrain">
+        <span class="l" style="--i:0"><span class="k">SELECT</span> name, roles, location</span>
+        <span class="l" style="--i:1"><span class="k">FROM</span>   portfolio</span>
+        <span class="l" style="--i:2"><span class="k">WHERE</span>  focus = <span class="s">'data and software'</span></span>
+        <span class="l" style="--i:3"><span class="k">LIMIT</span>  1;</span>
+      </div>
+      <div class="result">
+        <div class="row">
+          <p class="col" aria-hidden="true">name</p>
+          <h1 id="name">Sayed Qassim Mohammed</h1>
+          <div class="meta">
+            <div><p class="col" aria-hidden="true">roles</p><p>Data Scientist and Software Engineer</p></div>
+            <div><p class="col" aria-hidden="true">location</p><p>Bahrain</p></div>
+          </div>
+          <p style="max-width:56ch;font-size:1.125rem;margin:0 0 30px">I turn databases, machine learning and automation into practical systems that people use, from Python models to AI-powered workflows and mobile app backends.</p>
+          <a class="btn" href="#projects">See my work</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="h-about">
+      <div class="sec">
+        <h2 id="h-about">About</h2>
+        <div class="body">
+          <p>My foundation is databases, SQL and systems analysis. I am now extending it into data science through hands-on machine learning in Python.</p>
+          <p>I build AI-powered automation workflows with n8n and OpenAI, such as email classification and support ticketing. I also build software with Flutter, Firebase and backend architecture, aiming for scalable solutions for the Bahrain market.</p>
+          <p>Right now I am learning how to build AI agents, discovering new tools for working with databases, and picking up better ways to build complete websites and applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="h-exp">
+      <div class="sec">
+        <h2 id="h-exp">Experience</h2>
+        <div class="body">
+          <div class="role">
+            <h3>Data Science Immersive Fellow</h3>
+            <p class="dates">General Assembly, Bahrain. Sep 2026 to Nov 2026</p>
+            <p>Built a medication tracking app and an AI meeting assistant. Both are described under Projects.</p>
+          </div>
+          <div class="role">
+            <h3>Systems Programmer, IT Department</h3>
+            <p class="dates">Canvas Design Studio, Bahrain. Feb 2026 to Apr 2026</p>
+            <ul>
+              <li>Took part in strategic decision-making for the IT department.</li>
+              <li>Led backend development for a mobile application, including database design, integrations and backend architecture.</li>
+              <li>Designed system blueprints and the overall software architecture as System Architect.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="h-proj">
+      <div class="sec">
+        <h2 id="h-proj">Projects</h2>
+        <div class="body">
+          <article class="feat">
+            <p class="ctx">General Assembly fellowship</p>
+            <h3>AI Meeting Assistant</h3>
+            <p>Turns long meeting recordings into searchable knowledge, so users can quickly find discussions, decisions and key information.</p>
+            <p class="tools"><b>Tools:</b> Python, Streamlit, OpenRouter, Whisper, BGE-M3, ChromaDB, FFmpeg</p>
+          </article>
+          <article class="feat">
+            <p class="ctx">General Assembly fellowship</p>
+            <h3>Meds Tracker</h3>
+            <p>A Streamlit app for tracking medications, logging doses, checking refills and getting AI-assisted drug interaction summaries.</p>
+            <p class="tools"><b>Tools:</b> Pandas, Streamlit, OpenRouter</p>
+          </article>
+          <div class="more">
+            <article>
+              <p class="ctx">Canvas Design Studio</p>
+              <h3>Attach mobile application</h3>
+              <p>An application that connects doctors and students worldwide to collaborate on academic writing.</p>
+              <p class="tools"><b>Tools:</b> Firebase, Flutter, Visual Studio, Lucidchart</p>
+            </article>
+            <article>
+              <p class="ctx">Canvas Design Studio</p>
+              <h3>IT support ticketing system</h3>
+              <p>An automated workflow that turns support emails into tickets, uses OpenAI to categorise and prioritise them, and sends instant Gmail acknowledgments with suggested fixes.</p>
+              <p class="tools"><b>Tools:</b> n8n, Gmail integration, OpenAI</p>
+            </article>
+            <article>
+              <p class="ctx">Canvas Design Studio</p>
+              <h3>Gmail Inbox Classifier</h3>
+              <p>An AI-powered Gmail classifier that automates inbox organisation and improves email management workflows.</p>
+              <p class="tools"><b>Tools:</b> n8n, Gmail integration</p>
+            </article>
+            <article>
+              <p class="ctx">University of Bahrain, senior project</p>
+              <h3>READOLY</h3>
+              <p>An AI-supported e-library mobile app with PDF upload, book management, AI-generated summaries and quizzes.</p>
+              <p class="tools"><b>Tools:</b> FlutterFlow, Firebase, Lucidchart</p>
+            </article>
+            <article>
+              <p class="ctx">University of Bahrain</p>
+              <h3>EduEntry</h3>
+              <p>An e-learning data storage system for managing students, courses and assessments, built on structured database design and implemented in Oracle APEX.</p>
+              <p class="tools"><b>Tools:</b> Oracle APEX, SQL, ERD, Normalization, Lucidchart</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="h-skills">
+      <div class="sec">
+        <h2 id="h-skills">Skills</h2>
+        <dl>
+          <div><dt>Programming languages</dt><dd>HTML, CSS, PHP, C#, Java, SQL, Python</dd></div>
+          <div><dt>Data and machine learning</dt><dd>Pandas, Scikit-learn, Keras, Streamlit, Firebase</dd></div>
+          <div><dt>Software and platforms</dt><dd>Visual Studio, Figma, GitHub, FlutterFlow, Hugging Face, Kaggle, Roboflow</dd></div>
+          <div><dt>AI and automation</dt><dd>n8n, OpenAI modules, API integration, Apify web scraping, Gmail and Google Drive integration</dd></div>
+          <div><dt>Spoken languages</dt><dd>Arabic (native), English (professional working proficiency)</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="h-edu">
+      <div class="sec">
+        <h2 id="h-edu">Education</h2>
+        <div class="body">
+          <div class="role">
+            <h3>Data Science Bootcamp Program</h3>
+            <p class="dates">General Assembly, Bahrain. Sep 2026 to Nov 2026</p>
+          </div>
+          <div class="role">
+            <h3>Bachelor Degree in Information System</h3>
+            <p class="dates">University of Bahrain. Sep 2020 to Apr 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="h-contact">
+      <div class="sec">
+        <h2 id="h-contact">Contact</h2>
+        <div class="body">
+          <p>Open to conversations about data science and software engineering roles in Bahrain.</p>
+          <a class="big" href="mailto:qassimsayed00@gmail.com">qassimsayed00@gmail.com</a>
+          <ul>
+            <li>Phone: <a href="tel:+97339749934">+973 3974 9934</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/sayed-qassim-091255394/" rel="noopener">Sayed Qassim Mohammed</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Sayed Qassim Mohammed</div>
+</footer>
+<script>
+  var y=document.getElementById('yr');
+  if(y){y.textContent=new Date().getFullYear();}
+</script>
+</body>
+</html>
